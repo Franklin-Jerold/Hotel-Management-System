@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --transition: all 0.7s ease;
+    --yellow: #f9d342;
+    --dark: #292826;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+@media(max-width: 500px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+.header {
+
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+}
+
+.head-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-top span {
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: var(--transition);
+}
+
+.head-top span:hover {
+    color: var(--yellow);
+}
+
+
+.navbar {
+    width: 90%;
+    margin-left: 750px;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    margin-left: 400px;
+
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    padding: 15px 0;
+    opacity: 1;
+    letter-spacing: 1.8px;
+    transition: var(--transition);
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.navbar li a:hover {
+    padding-left: 1.5px;
+}
+
+
+
+
+h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: -50px;
+}
+
+.container {
+    margin-top: 70px;
+    margin-left: 500px;
+    width: 500px;
+}
+
+label {
+    font-weight: bold;
+    margin-left: 6px;
+}
+
+.form {
+    display: contents;
+    margin-left: 510px;
+}
+
+#submit {
+    letter-spacing: 2px;
+    transition: var(--transition);
+}
+
+#submit:hover {
+    color: var(--yellow);
+    font-weight: bolder;
+}

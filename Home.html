@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IBIS Hotel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="Home.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="header bhover" id="header">
+        <div class="head-top">
+            <div class="site-name">
+                <span>GEEKPROBIN</span>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li id="disp-man"><a href="#">Manage</a></li>
+                    <li><a href="adminlog.html" target="_blank">Admin</a></li>
+                    <li><a href="Reports.html">Reports</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasLabel">Manage</h5>
+                    <button type="button" class="btn-close" id="btn-close" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <form action="rooms.php" target="_blank">
+                        <button class="buttonm" id="rooms" type="submit"><b>Rooms
+                            </b></button>
+                    </form>
+
+                    <form action="Addcustomer.html">
+                        <button class="buttonm" type="submit"><b>New Customers
+                            </b></button>
+                    </form>
+
+                    <form action="Customerinfo.php" target="_blank">
+                        <button class="buttonm" type="submit"><b>Customer info
+                            </b></button>
+                    </form>
+                    <form action="Employeeinfo.php" target="_blank">
+                        <button class="buttonm" type="submit"><b>Employee info
+                            </b></button>
+                    </form>
+
+                    <form action="CheckOut.php">
+                        <button class="buttonm" type="submit"><b>Check-Out
+                            </b></button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="head-bottom flex visually-hidden" id="headtext">
+            <h2>NICE AND COMFORTABLE PLACE TO STAY</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto est quos veniam impedit numquam itaque
+                voluptatum, dicta asperiores accusamus, eligendi neque ut incidunt, modi harum molestiae atque natus
+                officia minima.</p>
+
+        </div>
+
+
+    </header>
+    <!-- end of header -->
+
+
+
+
+    <!-- fullscreen modal -->
+    <div id="modal"></div>
+    <!-- end of fullscreen modal -->
+
+
+    <!-- body content  -->
+    <section class="services sec-width" id="services">
+        <div class="title">
+            <h2>services</h2>
+        </div>
+        <div class="services-container">
+            <!-- single service -->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-utensils"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Food Service/ Food Runner</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis tempore officia
+                        accusamus asperiores. Illum maxime eligendi necessitatibus laudantium iste nisi pariatur
+                        doloremque ut illo similique voluptatum enim distinctio perferendis, ad ipsam aspernatur omnis
+                        rem autem ex, reiciendis corporis suscipit!</p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <!-- end of single service -->
+            <!-- single service -->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-swimming-pool"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Refreshment</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis tempore officia
+                        accusamus asperiores. Illum maxime eligendi necessitatibus laudantium iste nisi pariatur
+                        doloremque ut illo similique voluptatum enim distinctio perferendis, ad ipsam aspernatur omnis
+                        rem autem ex, reiciendis corporis suscipit!</p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <!-- end of single service -->
+            <!-- single service -->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-broom"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Housekeeping</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis tempore officia
+                        accusamus asperiores. Illum maxime eligendi necessitatibus laudantium iste nisi pariatur
+                        doloremque ut illo similique voluptatum enim distinctio perferendis, ad ipsam aspernatur omnis
+                        rem autem ex, reiciendis corporis suscipit!</p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <!-- end of single service -->
+            <!-- single service -->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-door-closed"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Room Security</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias blanditiis tempore officia
+                        accusamus asperiores. Illum maxime eligendi necessitatibus laudantium iste nisi pariatur
+                        doloremque ut illo similique voluptatum enim distinctio perferendis, ad ipsam aspernatur omnis
+                        rem autem ex, reiciendis corporis suscipit!</p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <!-- end of single service -->
+        </div>
+    </section>
+
+
+
+    <section class="rooms sec-width" id="rooms">
+        <div class="title">
+            <h2>rooms</h2>
+        </div>
+        <div class="rooms-container">
+            <!-- single room -->
+            <article class="room">
+                <div class="room-image">
+                    <img src="images/img1.jpg" alt="room image">
+                </div>
+                <div class="room-text">
+                    <h3>Luxury Rooms</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Lorem ipsum dolor sit amet.
+                        </li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus exercitationem repellendus
+                        maxime ullam tempore architecto provident unde expedita quam beatae, dolore eligendi molestias
+                        sint tenetur incidunt voluptas. Unde corporis qui iusto vitae. Aut nesciunt id iste, cum esse
+                        commodi nemo?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corporis quasi officiis cumque,
+                        fugiat nostrum sunt, tempora animi dicta laborum beatae ratione doloremque. Delectus odio sit
+                        eius labore, atque quo?</p>
+
+            </article>
+            <!-- end of single room -->
+            <!-- single room -->
+            <article class="room">
+                <div class="room-image">
+                    <img src="images/img2.jpg" alt="room image">
+                </div>
+                <div class="room-text">
+                    <h3>Luxury Rooms</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Lorem ipsum dolor sit amet.
+                        </li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus exercitationem repellendus
+                        maxime ullam tempore architecto provident unde expedita quam beatae, dolore eligendi molestias
+                        sint tenetur incidunt voluptas. Unde corporis qui iusto vitae. Aut nesciunt id iste, cum esse
+                        commodi nemo?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corporis quasi officiis cumque,
+                        fugiat nostrum sunt, tempora animi dicta laborum beatae ratione doloremque. Delectus odio sit
+                        eius labore, atque quo?</p>
+
+                </div>
+            </article>
+            <!-- end of single room -->
+            <!-- single room -->
+            <article class="room">
+                <div class="room-image">
+                    <img src="images/img3.jpg" alt="room image">
+                </div>
+                <div class="room-text">
+                    <h3>Luxury Rooms</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Lorem ipsum dolor sit amet.
+                        </li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus exercitationem repellendus
+                        maxime ullam tempore architecto provident unde expedita quam beatae, dolore eligendi molestias
+                        sint tenetur incidunt voluptas. Unde corporis qui iusto vitae. Aut nesciunt id iste, cum esse
+                        commodi nemo?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla corporis quasi officiis cumque,
+                        fugiat nostrum sunt, tempora animi dicta laborum beatae ratione doloremque. Delectus odio sit
+                        eius labore, atque quo?</p>
+
+                </div>
+            </article>
+            <!-- end of single room -->
+        </div>
+    </section>
+
+
+    <section class="customers" id="customers">
+        <div class="sec-width">
+            <div class="title">
+                <h2>customers</h2>
+            </div>
+            <div class="customers-container">
+                <!-- single customer -->
+                <div class="customer">
+                    <div class="rating">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                    </div>
+                    <h3>We Loved it</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae veritatis provident
+                        eveniet praesentium veniam cum iusto distinctio esse, vero est autem, eius optio cupiditate?</p>
+                    <img src="images/cus1.jpg" alt="customer image">
+                    <span>Richard and Juilet </span>
+                </div>
+                <!-- end of single customer -->
+                <!-- single customer -->
+                <div class="customer">
+                    <div class="rating">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                    </div>
+                    <h3>Comfortable Living</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae veritatis provident
+                        eveniet praesentium veniam cum iusto distinctio esse, vero est autem, eius optio cupiditate?</p>
+                    <img src="images/cus2.jpg" alt="customer image">
+                    <span>Venila, (Italy)</span>
+                </div>
+                <!-- end of single customer -->
+                <!-- single customer -->
+                <div class="customer">
+                    <div class="rating">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                    </div>
+                    <h3>Nice Place</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae veritatis provident
+                        eveniet praesentium veniam cum iusto distinctio esse, vero est autem, eius optio cupiditate?</p>
+                    <img src="images/cus3.jpg" alt="customer image">
+                    <span>James and Morgan</span>
+                </div>
+                <!-- end of single customer -->
+            </div>
+        </div>
+    </section>
+    <!-- end of body content -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <h2>About Us </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sapiente mollitia doloribus
+                    provident? Eos quisquam aliquid vel dolorum, impedit culpa.</p>
+            </div>
+
+            <div>
+                <h2>Useful Links</h2>
+                <a href="#">Blog</a>
+                <a href="#">Rooms</a>
+                <a href="#">Subscription</a>
+                <a href="#">Gift Card</a>
+            </div>
+
+            <div>
+                <h2>Privacy</h2>
+                <a href="#">Career</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Services</a>
+            </div>
+
+            <div>
+                <h2>Have A Question</h2>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <span>
+                        791 Marathahalli, Near Multiplex, Bengaluru 560037
+
+                    </span>
+                </div>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-phone-alt"></i>
+                    </span>
+                    <span>
+                        +91945 37534 48
+                    </span>
+                </div>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span>
+                        info@domain.com
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+    <script src="Home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

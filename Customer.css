@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --transition: all 0.7s ease;
+    --yellow: #f9d342;
+    --dark: #292826;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+
+.btn {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 140px;
+    display: block;
+    margin: 15px auto;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: large;
+}
+
+@media(max-width: 500px) {
+    body {
+        font-size: 14px;
+
+    }
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)), url("images/banner-img.jpg");
+}
+
+.header {
+
+    min-height: 10vh;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+}
+
+.head-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-top span {
+    color: #fff;
+    font-size: x-large;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: var(--transition);
+}
+
+.head-top span:hover {
+    color: var(--yellow);
+}
+
+.head-bottom {
+    flex: 1;
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.head-bottom h2 {
+    padding: 22px 0;
+    font-size: 45px;
+    border-bottom: 1px solid #fff;
+}
+
+.head-bottom p {
+    opacity: 0.7;
+    font-size: 20px;
+    margin: 45px auto;
+    width: 60vw;
+}
+
+
+
+
+
+@media(max-width: 500px) {
+    .head-btn {
+        font-size: 17px;
+    }
+
+    .head-bottom h2 {
+        font-size: 28px;
+    }
+
+    .head-bottom p {
+        font-size: 17px;
+        margin: 20px auto;
+    }
+}
+
+.navbar {
+    width: 90%;
+    margin-left: 750px;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    margin-left: 300px;
+
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 15px 0;
+    opacity: 1;
+    letter-spacing: 1.8px;
+    transition: var(--transition);
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.navbar li a:hover {
+    padding-left: 1.5px;
+}
+
+h1 {
+    margin-left: -80px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #15f4ee;
+
+}
+
+
+.book {
+
+    color: #fff;
+    padding: 40px 60px;
+    position: relative;
+    width: 80%;
+}
+
+.book-form {
+    align-items: center;
+    margin-left: 155.3px;
+    margin-bottom: 500px;
+
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    width: 300px;
+}
+
+.book-form input[type="submit"] {
+    margin: 18px 0 0 0;
+    background: var(--dark);
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.book-form label,
+.book-form input {
+    width: 100%;
+}
+
+input {
+    font-weight: 700;
+}
+
+.book-form label {
+    font-weight: 600;
+    word-spacing: 5px;
+    padding-bottom: 8px;
+}
+
+.book-form input:not(.btn) {
+    margin: 4px 0 16px 0;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 17px;
+    border: none;
+}
+
+.book-form input:focus {
+    outline: 0;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+}
+
+@media(min-width: 768px) {
+    .book-form {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 24px;
+    }
+}
+
+@media(min-width: 1170px) {
+    .book-form {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(min-width: 1370px) {
+    .book-form {
+        grid-template-columns: 2fr 2fr 1fr 1fr 1fr 2fr;
+    }
+
+    .book {
+        height: 40vh;
+        display: grid;
+    }
+}
+
+@media(max-width: 500px) {
+    .book {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+#submit {
+    text-align: center;
+    margin-left: 380px;
+    font-size: 20px;
+}
+
+p {
+    margin-left: -140px;
+    margin-top: -40px;
+    padding-top: 5px;
+}

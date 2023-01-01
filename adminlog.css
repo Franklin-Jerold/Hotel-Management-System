@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --transition: all 0.7s ease;
+    --yellow: #f9d342;
+    --dark: #292826;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("images/banner-img.jpg");
+}
+
+
+form {
+    margin-top: 100px;
+}
+
+label {
+    letter-spacing: 0.5px;
+}
+
+
+
+#logtitle {
+    color: #fff;
+    letter-spacing: 2px;
+
+}
+
+#remember {
+    color: #fff;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+}
+
+.m-auto {
+    margin: auto !important;
+    margin-top: auto !important;
+    margin-right: auto !important;
+    margin-bottom: auto !important;
+    margin-left: auto !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+
+.text-center {
+    text-align: center !important;
+}
